@@ -1,7 +1,7 @@
 class Anagram:
 
     @staticmethod
-    def isAnagram(s: str, t: str) -> bool:
+    def is_anagram(s: str, t: str) -> bool:
 
         """
         Should return True if all the letters are present from first string param in second in param
@@ -28,5 +28,5 @@ class Anagram:
 
 
 ag = Anagram()
-print(ag.isAnagram('anagram', 'nagaram'))
-print(ag.isAnagram('cat', 'rat'))
+print(ag.is_anagram('anagram', 'nagaram'))
+print(ag.is_anagram('cat', 'rat'))

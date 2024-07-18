@@ -1,7 +1,6 @@
 class Palindrome:
     @staticmethod
-    def isPalindrome(num: int) -> bool:
-
+    def is_palindrome(num: int) -> bool:
         """
         :param num: Int
         :return: Boolean
@@ -22,4 +21,4 @@ class Palindrome:
 
 
 palindrome = Palindrome()
-print(palindrome.isPalindrome(121))
+print(palindrome.is_palindrome(121))

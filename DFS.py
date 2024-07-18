@@ -21,8 +21,8 @@ graph = {
 #             DFS(visited, graph, neighbour)
 #
 
-def dfs(adjacencyList, startNode):
-    stack = [startNode]
+def dfs(adjacency_list, start_node):
+    stack = [start_node]
     visited = set()
 
     while stack:
@@ -32,7 +32,7 @@ def dfs(adjacencyList, startNode):
             print(node, end=" ")
             visited.add(node)
 
-            for neighbour in reversed(adjacencyList[node]):
+            for neighbour in reversed(adjacency_list[node]):
                 if neighbour not in visited:
                     stack.append(neighbour)
 

@@ -10,18 +10,18 @@ graph = {
 }
 
 
-def BFS(adjacencyList, startNode):
-    visited = [startNode]
-    queue = deque([startNode])
+def bfs(adjacency_list, start_node):
+    visited = [start_node]
+    queue = deque([start_node])
 
     while queue:
         first_node = queue.popleft()
         print(first_node, end=" ")
 
-        for neighbour in adjacencyList[first_node]:
+        for neighbour in adjacency_list[first_node]:
             if neighbour not in visited:
                 visited.append(neighbour)
                 queue.append(neighbour)
 
 
-BFS(graph, "A")
+bfs(graph, "A")

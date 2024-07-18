@@ -4,7 +4,7 @@ from typing import List
 class Duplicate:
 
     @staticmethod
-    def containsDuplicate(nums: List[int]) -> bool:
+    def contains_duplicates(nums: List[int]) -> bool:
         """
         :param nums: List of Integers
         :return: boolean (True or False)
@@ -18,5 +18,5 @@ class Duplicate:
 
 
 duplicate = Duplicate()
-print(duplicate.containsDuplicate([1, 2, 3, 1, 3, 6]))
-print(duplicate.containsDuplicate([1, 3, 6, 8, 9]))
+print(duplicate.contains_duplicates([1, 2, 3, 1, 3, 6]))
+print(duplicate.contains_duplicates([1, 3, 6, 8, 9]))
